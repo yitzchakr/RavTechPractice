@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug Express Server",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            
+            "program": "${workspaceFolder}/practice5", // Update this to your entry file
+            "restart": true,
+            "console": "integratedTerminal",
+            "runtimeArgs": ["--inspect"],
+            
+        },
+        
+    ]
+  }
