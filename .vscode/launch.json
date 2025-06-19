@@ -4,17 +4,17 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Debug Express Server",
+            "name": "Debug TypeScript",
+            "runtimeExecutable": "npx",
+            "runtimeArgs": [
+                "ts-node",
+                "${workspaceFolder}/tspractice.ts"
+            ],
+            "cwd": "${workspaceFolder}",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            
-            "program": "${workspaceFolder}/practice5", // Update this to your entry file
-            "restart": true,
-            "console": "integratedTerminal",
-            "runtimeArgs": ["--inspect"],
-            
-        },
-        
+            "console": "integratedTerminal"
+        }
     ]
-  }
+}
